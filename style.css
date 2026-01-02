@@ -1,0 +1,306 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding-top: 70px; 
+}
+
+
+
+.center {
+    min-height: calc(100vh - 70px); 
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;    
+    align-items: center;
+
+    text-align: center;
+    padding-top: 100px;             
+    color: skyblue;
+}
+
+.resume {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.resume-btn {
+    font-size: 16px;              
+    padding: 10px 22px;           
+    color: #00c6ff;
+    text-decoration: none;
+
+    border: 1.5px solid #00c6ff;  
+    border-radius: 6px;
+
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover{
+    color: black;
+    background-color: #adb7ba;
+}
+
+.resume a:hover{
+    color: skyblue;
+}
+
+h3{
+    font-size: xx-large;
+}
+
+.logo{
+    font-size: 22px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif\;
+}
+
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 70px;
+
+    background-color: black;
+    padding: 0 60px 0 40px;
+    z-index: 1000;
+    overflow: visible;
+    box-sizing: border-box;
+    
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+
+
+.navbar ul li a:hover{
+    color: skyblue;
+}
+#contacts{
+    color: white;
+    min-height: 100vh; 
+    padding: 80px;
+    border-top:1px  solid grey;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+.navbar{
+    white-space: nowrap;
+    align-items: center;
+    display: flex;
+
+
+}
+section{
+    scroll-margin-top: 90px;
+}
+section {
+    
+    padding: 80px 60px;
+    color: white;
+}
+ .nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 6px;
+}
+
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: skyblue;
+    transition: width 0.3s ease;
+}
+
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+.about-section {
+   about-section {
+    padding: 80px 80px 40px;  
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+.section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+
+.section-title::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: skyblue;
+    display: block;
+    margin: 10px 0 auto;
+}
+.center h1{
+     font-size: 52px;    
+     color: white;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.skills-selection{
+    padding: 60px 80px 120px;
+    background-color: black;
+    color: white;
+}
+.skills-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+
+    padding: 30px;                 
+    background-color: #0b1220;     
+    border-radius: 14px;
+
+    
+}
+
+.skill-card {
+    min-width: 140px;
+    background-color: #0f172a;     
+    padding: 25px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.skill-icon {
+    font-size: 28px;
+    color: skyblue;
+    margin-bottom: 12px;
+}
+.skill-card:hover {
+    border: 1px solid skyblue;
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 0 15px rgba(135, 206, 235, 0.5),
+        0 10px 30px rgba(0, 0, 0, 0.8);
+}
+.projects-section {
+    padding: 60px 80px 120px;
+    background-color: black;
+    color: white;
+}
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+.project-card {
+    background-color: #0b1220;
+    padding: 28px 24px;
+    border-radius: 12px;
+
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+}
+.project-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #cfd6e1;
+    margin-bottom: 16px;
+}
+.tech-used {
+    font-size: 13px;
+    color: skyblue;
+}
+.project-card:hover {
+    border: 1px solid skyblue;
+    transform: translateY(-6px);
+    box-shadow:
+        0 0 14px rgba(135, 206, 235, 0.4),
+        0 10px 30px rgba(0, 0, 0, 0.8);
+}
+.contact-section {
+    padding: 60px 80px 100px;
+    background-color: black;
+    color: white;
+}
+.contact-quote {
+    max-width: 700px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cfd6e1;
+    margin: 30px 0 40px;
+}
+.contact-details p {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.contact-details strong {
+    color: skyblue;
+}
+.certifications-section {
+    padding: 60px 80px 100px;
+    background-color: black;
+    color: white;
+}
+.certifications-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    max-width: 700px;
+}
+.certifications-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #1e293b;
+}
+
+
+.cert-title {
+    font-size: 16px;
+    color: white;
+}
+.cert-source {
+    font-size: 14px;
+    color: skyblue;
+}
+
