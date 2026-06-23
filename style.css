@@ -1,3 +1,4 @@
+```css
 *{
     margin:0;
     padding:0;
@@ -6,16 +7,17 @@
 
 html{
     scroll-behavior:smooth;
+    background:#000;
 }
 
 body{
-    background-color:black;
+    background:#000;
     color:white;
     font-family:Arial, Helvetica, sans-serif;
     padding-top:70px;
 }
 
-/* ================= HEADER ================= */
+/* ================= NAVBAR ================= */
 
 .header{
     position:fixed;
@@ -24,7 +26,7 @@ body{
     width:100%;
     height:70px;
 
-    background:black;
+    background:#000;
 
     display:flex;
     justify-content:space-between;
@@ -37,20 +39,20 @@ body{
 
 .logo{
     color:white;
-    font-size:24px;
+    font-size:40px;
     font-weight:bold;
 }
 
 .nav-links{
     display:flex;
     list-style:none;
-    gap:25px;
+    gap:30px;
 }
 
 .nav-links a{
     color:white;
     text-decoration:none;
-    font-size:16px;
+    font-size:18px;
     position:relative;
 }
 
@@ -63,8 +65,8 @@ body{
     width:0%;
     height:2px;
 
-    background:skyblue;
-    transition:.3s;
+    background:#38bdf8;
+    transition:0.3s;
 }
 
 .nav-links a:hover::after{
@@ -72,16 +74,19 @@ body{
 }
 
 .nav-links a:hover{
-    color:skyblue;
+    color:#38bdf8;
 }
 
-/* ================= HERO ================= */
+/* ================= HERO SECTION ================= */
 
 .center{
-    min-height:90vh;
+    min-height:100vh;
+
+    background:#000;
 
     display:flex;
     flex-direction:column;
+
     justify-content:center;
     align-items:center;
 
@@ -91,21 +96,27 @@ body{
 }
 
 .center h3{
-    color:white;
     font-size:28px;
+    color:white;
     margin-bottom:10px;
 }
 
 .center h1{
+    font-size:72px;
     color:white;
-    font-size:58px;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 .center h2{
-    color:skyblue;
-    font-size:22px;
-    margin-bottom:35px;
+    font-size:30px;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.center p{
+    font-size:20px;
+    color:#bdbdbd;
+    margin-bottom:30px;
 }
 
 /* ================= RESUME BUTTON ================= */
@@ -115,30 +126,31 @@ body{
 
     padding:12px 25px;
 
-    border:1px solid skyblue;
-    border-radius:6px;
+    border:1px solid #38bdf8;
+    border-radius:8px;
 
+    color:#38bdf8;
     text-decoration:none;
-    color:skyblue;
 
-    transition:.3s;
+    transition:0.3s;
 }
 
 .resume-btn:hover{
-    background:skyblue;
+    background:#38bdf8;
     color:black;
 }
 
 /* ================= SECTIONS ================= */
 
 section{
-    padding:80px 70px;
-    scroll-margin-top:80px;
+    padding:80px 80px;
+    background:#000;
+    color:white;
 }
 
 .section-title{
-    font-size:38px;
-    margin-bottom:35px;
+    font-size:40px;
+    margin-bottom:30px;
 }
 
 .section-title::after{
@@ -148,7 +160,8 @@ section{
     width:90px;
     height:3px;
 
-    background:skyblue;
+    background:#38bdf8;
+
     margin-top:10px;
 }
 
@@ -156,62 +169,61 @@ section{
 
 .about-text{
     max-width:900px;
+    color:#d4d4d4;
     line-height:1.9;
-    color:#d6d6d6;
+    font-size:18px;
 }
 
 /* ================= SKILLS ================= */
 
 .skills-grid{
+    max-width:800px;
+    margin:auto;
+
     display:grid;
 
     grid-template-columns:repeat(3,1fr);
 
     gap:15px;
 
-    max-width:700px;
-
-    margin:auto;
-
     padding:20px;
 
-    background:#0b1220;
-    border-radius:14px;
+    background:#0f172a;
+    border-radius:15px;
 }
 
 .skill-card{
-    background:#0f172a;
+    background:#111827;
+
+    border-radius:10px;
+
+    padding:15px;
 
     min-height:85px;
-
-    padding:12px;
 
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
 
-    border-radius:10px;
-
     border:1px solid transparent;
 
-    transition:.3s;
+    transition:0.3s;
 }
 
 .skill-card:hover{
-    border:1px solid skyblue;
+    border:1px solid #38bdf8;
 
-    transform:translateY(-5px);
+    transform:translateY(-4px);
 
     box-shadow:
-    0 0 12px rgba(135,206,235,.4),
-    0 10px 25px rgba(0,0,0,.7);
+    0 0 12px rgba(56,189,248,0.35);
 }
 
 .skill-icon{
     font-size:20px;
-    color:skyblue;
-    margin-bottom:5px;
+    margin-bottom:6px;
+    color:#38bdf8;
 }
 
 .skill-card p{
@@ -230,40 +242,39 @@ section{
 }
 
 .project-card{
-    background:#0b1220;
-
-    padding:25px;
+    background:#0f172a;
 
     border-radius:12px;
 
+    padding:25px;
+
     border:1px solid transparent;
 
-    transition:.3s;
+    transition:0.3s;
 }
 
 .project-card:hover{
-    border:1px solid skyblue;
+    border:1px solid #38bdf8;
 
     transform:translateY(-5px);
 
     box-shadow:
-    0 0 12px rgba(135,206,235,.4),
-    0 10px 25px rgba(0,0,0,.7);
+    0 0 12px rgba(56,189,248,0.35);
 }
 
 .project-card h3{
     margin-bottom:15px;
-    font-size:21px;
+    color:white;
 }
 
 .project-card p{
+    color:#d4d4d4;
     line-height:1.7;
-    color:#d6d6d6;
     margin-bottom:15px;
 }
 
 .tech-used{
-    color:skyblue;
+    color:#38bdf8;
     font-size:14px;
 }
 
@@ -271,7 +282,7 @@ section{
 
 .certifications-list{
     list-style:none;
-    max-width:850px;
+    max-width:900px;
 }
 
 .certifications-list li{
@@ -288,16 +299,16 @@ section{
 }
 
 .cert-source{
-    color:skyblue;
+    color:#38bdf8;
 }
 
 /* ================= CONTACT ================= */
 
 .contact-quote{
-    color:#d6d6d6;
-    line-height:1.8;
+    color:#d4d4d4;
     max-width:700px;
-    margin-bottom:30px;
+    line-height:1.8;
+    margin-bottom:25px;
 }
 
 .contact-details p{
@@ -305,7 +316,7 @@ section{
 }
 
 .contact-details strong{
-    color:skyblue;
+    color:#38bdf8;
 }
 
 /* ================= FOOTER ================= */
@@ -314,7 +325,7 @@ footer{
     text-align:center;
     padding:25px;
     border-top:1px solid #1e293b;
-    color:#999;
+    color:#888;
 }
 
 /* ================= MOBILE ================= */
@@ -334,11 +345,15 @@ footer{
     }
 
     .center h1{
-        font-size:40px;
+        font-size:45px;
     }
 
     .center h2{
-        font-size:18px;
+        font-size:20px;
+    }
+
+    .center p{
+        font-size:16px;
     }
 
     section{
@@ -351,6 +366,7 @@ footer{
 
     .certifications-list li{
         flex-direction:column;
-        gap:6px;
+        gap:5px;
     }
 }
+```
